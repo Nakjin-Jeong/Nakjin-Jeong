@@ -1,0 +1,64 @@
+*{
+   margin: 0; padding: 0;
+   box-sizing: border-box;
+}
+body{
+   font-size: 16px; /*고치지 말라고 명시*/
+}
+#container{
+   width: 1080px;
+   margin: 0 auto;
+   /*background-color: pink;*/
+}
+#container>a>img{
+   width: 100%;
+}
+#container>.wrap>div{
+   width: 30%;
+   float: left;
+   /*margin-right: 5%;*/
+}
+#container>.wrap>div:nth-child(2){
+   margin-left: 5%;
+   margin-right: 5%;
+}
+#container>.wrap>div.box1{
+   /*background-color: green;*/
+}
+#container>.wrap>div.box2{
+   /*background-color: orange;*/
+}
+#container>.wrap>div.box3{
+   /*background-color: skyblue;*/
+}
+#container>.wrap>div.box1 .pic{
+   width: 200px;
+   height: 200px;
+   border: 2px solid #333;
+   border-radius: 50%;
+   margin: 30px auto;
+   overflow: hidden;
+   /*text-align: center;*/
+}
+#container>.wrap>div.box1 img{
+   width: 100%;
+}
+#container>.wrap>div.box1 strong{
+   font-size: 25px;
+   margin-bottom: 10px;
+}
+#container>.wrap>div.box1 hr{
+   width: 30px;
+   border-color: #222;
+   margin: 20px 5px;
+}
+#container>.wrap h1{
+   color: gray;
+   font-size: 25px;
+   margin: 20px 0;
+}
+#container>.wrap >.box2>div>div,
+#container>.wrap >.box3>div>div{
+   padding-bottom: 20px;
+   border-bottom: 1px dotted #333;
+}

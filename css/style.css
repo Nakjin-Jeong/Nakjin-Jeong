@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+/*    * : all    */
+*{
+	margin: 0;padding: 0;
+	/*크기를 고정*/
+	box-sizing: border-box;
+}
+
+a{
+	/*밑줄 제거*/
+	text-decoration: none;
+}
+ul{
+	/*블릿을 숨겨요*/
+	list-style: none;
+}
+img{
+	width: 400px;
+}
+#container{
+	/*너비*/
+	width: 1200px;
+
+	/*위,아래값 0 // 좌,우 auto 반드시 width속성이 있어야 합니다.*/
+	margin: 0 auto;
+
+	/*배경색*/
+	/*background: pink;*/
+}
+
+header{
+	/*배경색*/
+	background-color: #025159;
+	height: 100px;
+	color: white;
+	/*padding : 크기에 영향을 줌 */
+	padding-left: 40px;padding-top: 20px;
+}
+
+header h1{
+	/*웹폰트(서체) 적용*/
+	font-family: 'Roboto', sans-serif;
+	/*글자크기*/
+	font-size: 48px;
+	/*background-color: red;*/
+	width: 240px;
+	display: inline-block;
+	margin-right: 200px;
+}
+header nav{
+	/* 주석 단축키 : ctrl + / */
+	/*background-color: blue;*/
+	width: 670px;
+	display: inline-block;
+}
+header nav li{
+	margin-right: 92px;
+}
+header a{
+	color: white;
+}
+
+header nav li{
+	display: inline-block;
+}
+header nav a:hover{
+	color: red;
+}
+
+/*  > : 자식 식별자*/
+main>section img{
+	/*왼쪽위, 오른쪽위, 오른쪽아래,왼쪽 아래 모서리*/
+	/*border-radius: 10px 20px 30px 40px;*/
+	border-radius: 30px;
+}
+/*치유의 섬*/
+/*id="headling"*/
+#headling{
+	/*background-color: green;*/
+}
+/*자식 : >*/
+#headling>h2{
+	/*위,아래,왼쪽,오른쪽*/
+padding: 30px;
+}
+
+#headling .detail{
+	/*background-color: orange;*/
+	/*위치제어의 기준*/
+	position: relative;
+}
+/*class : .*/
+#headling .detail>img{
+	margin: 30px;
+	/*padding: 30px;*/
+}
+#headling .detail>h3{
+	/*위치이동 absolute는 요소가 겹칠수 있음*/
+	position: absolute;top: 50px;left: 500px;
+}
+#headling .detail>p{
+	position: absolute;top: 100px;left: 500px;
+}
+#headling .schedule{
+	position: relative;top: -150px;left: 500px;
+}
+#headling .schedule h3{
+	/*기존 행높이의 배수*/
+	line-height: 2;
+}
+#headling .schedule li{
+	line-height: 30px;
+}
+
+/*액티비티한 섬*/
+/*id="activity"*/
+#activity{
+	/*background-color: green;*/
+}
+/*자식 : >*/
+#activity>h2{
+	/*위,아래,왼쪽,오른쪽*/
+	padding: 30px;
+}
+#activity .detail{
+	/*background-color: orange;*/
+	/*위치제어의 기준*/
+	position: relative;
+}
+
+#activity .detail>img{
+	margin: 30px;
+}
+#activity .detail>h3{
+	position: absolute;top: 50px;left: 500px;
+}
+#activity .detail>p{
+	position: absolute;top: 100px;left: 500px;
+	line-height: 30px;
+}
+footer{
+	/*background-color: green;*/
+	border-top: 2px solid black;
+	        /*위, 오른쪽,아래쪽, 왼쪽*/
+	padding: 10px 10px 10px 200px;
+}
+footer ul li{
+	display: inline-block;
+	/*padding: 20px;*/
+	margin: 20px;
+	padding-right: 40px;
+	border-right: 2px solid black;
+}
+/*a는 글자의 스타일을 직접 적용해야함.*/
+footer ul li a{
+	color: black;
+}

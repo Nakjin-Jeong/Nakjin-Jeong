@@ -1,0 +1,21 @@
+*{
+	margin: 0;
+	padding: 0;
+	/*width, heigt 설정한 값으로 고정*/
+	box-sizing: border-box;
+}
+
+#container{
+	width: 480px;
+	margin: 20px auto;
+}
+h1{
+	font-size: 2em;
+	margin: 10px;
+}
+fieldset{
+	padding: 15px;
+}
+p{
+	line-height: 2;
+}
